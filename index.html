@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Unity Fire & Safety Services | Umreth, Gujarat</title>
+<meta name="description" content="Unity Fire & Safety Services provides fire safety equipment and service solutions for residential, commercial and industrial requirements in Umreth, Gujarat. Fire extinguishers, fire alarm, hydrant and sprinkler systems, installation, maintenance and inspection.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#062b26;--navy2:#0d4a40;--red:#FF6A13;--bg:#fff8f0;--card:#fff;--text:#10231f;--muted:#5b6b66;--line:#f0e2d3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07201c;--card:#0e2f29;--text:#f2faf7;--muted:#a6c2ba;--line:#1f4a41}}
+:root[data-theme="dark"]{--bg:#07201c;--card:#0e2f29;--text:#f2faf7;--muted:#a6c2ba;--line:#1f4a41}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.6 Poppins,system-ui,sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(6,43,38,.92);backdrop-filter:blur(10px);color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{font-weight:800;display:flex;align-items:center;gap:8px;font-size:15px}
+.menu{display:flex;gap:20px;align-items:center;font-size:14px;overflow-x:auto}
+.menu a:hover{color:#ffb36b}
+.btn{display:inline-block;padding:12px 24px;border-radius:12px;font-weight:600;font-size:14px;border:2px solid transparent;cursor:pointer;font-family:inherit;transition:.2s;white-space:nowrap}
+.red{background:linear-gradient(180deg,#ff8a3d,#e04e00);color:#fff;box-shadow:0 6px 0 #9c3300,0 12px 24px rgba(255,106,19,.38)}
+.red:hover{transform:translateY(2px);box-shadow:0 4px 0 #9c3300,0 8px 18px rgba(255,106,19,.3)}
+.out{border-color:#fff;color:#fff}.grn{background:#1faa59;color:#fff}
+.hero{background:radial-gradient(circle at 75% 40%,#127a68 0,var(--navy) 60%);color:#fff;padding:70px 0 90px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(34px,5.4vw,60px);line-height:1.1;margin:0 0 12px;font-weight:800}
+.hero h1 span{color:#ffa24d}
+.tag{font-size:20px;font-weight:600;color:#ffd2a8;margin:0 0 14px}
+.hero p{color:#cfe8e1;max-width:560px}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}
+section{padding:72px 0}
+h2{font-size:clamp(26px,3.6vw,38px);margin:0 0 8px;font-weight:800;text-align:center}
+h2:after{content:"";display:block;width:70px;height:5px;border-radius:4px;background:var(--red);margin:10px auto 0}
+.sub{text-align:center;color:var(--muted);max-width:680px;margin:14px auto 40px}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 14px 30px -14px rgba(11,31,58,.25);transition:.25s;transform-style:preserve-3d}
+.card:hover{transform:translateY(-8px) rotateX(3deg);box-shadow:0 26px 40px -16px rgba(255,106,19,.38)}
+.card h3{margin:14px 0 6px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:14px}
+.ico{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:28px;background:linear-gradient(145deg,#ffa24d,#e04e00);box-shadow:inset 0 3px 6px rgba(255,255,255,.4),0 8px 14px rgba(224,78,0,.4)}
+.alt{background:linear-gradient(180deg,var(--card),var(--bg))}
+.about{display:grid;gap:30px;grid-template-columns:1fr 1fr;align-items:start}
+.about p{color:var(--muted)}
+.pcard ul{padding-left:18px;margin:12px 0 16px;color:var(--muted);font-size:14px}
+.pimg{width:100%;height:190px;object-fit:cover;display:block;border-radius:14px;background:#ead9c8}
+.note{text-align:center;font-size:13px;color:var(--muted);margin-top:26px}
+.steps{counter-reset:s}.step{position:relative}
+.step:before{counter-increment:s;content:counter(s);position:absolute;top:-18px;left:22px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;background:radial-gradient(circle at 30% 25%,#ffb066,#d94700);box-shadow:0 6px 10px rgba(217,71,0,.45)}
+.step h3{margin-top:18px}
+form{max-width:760px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:14px;background:var(--card);border:1px solid var(--line);padding:28px;border-radius:22px;box-shadow:0 20px 40px -20px rgba(11,31,58,.35)}
+form .full{grid-column:1/-1}
+input,select,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit}
+label{font-size:13px;font-weight:600}
+.contact{display:grid;gap:22px;grid-template-columns:1fr 1fr}
+.contact .card p{font-size:15px;color:var(--text)}
+.band{background:linear-gradient(120deg,var(--navy),var(--navy2));color:#fff;text-align:center;padding:64px 0;border-top:6px solid var(--red)}
+.band p{color:#cfe8e1;max-width:620px;margin:10px auto 22px}
+.band .cta{justify-content:center}
+footer{background:#04201c;color:#a9cfc5;padding:50px 0 24px;font-size:14px}
+footer .cols{display:grid;gap:28px;grid-template-columns:1.4fr 1fr 1.2fr 1.2fr}
+footer h4{color:#fff;margin:0 0 10px}footer a{display:block;padding:2px 0}footer a:hover{color:#ffb36b}
+.bar{border-top:1px solid #12403a;margin-top:30px;padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;flex-direction:column;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:24px;box-shadow:0 8px 18px rgba(0,0,0,.35);color:#fff}
+@media(max-width:860px){.hero .wrap,.about,.contact,footer .cols,form{grid-template-columns:1fr}.menu a:not(.btn){display:none}.photo{order:-1}}
+.photo img{width:100%;height:440px;object-fit:cover;border-radius:28px;border:1px solid #ffffff35;box-shadow:18px 30px 60px #0009;transform:perspective(1100px) rotateY(-6deg)}
+.ind-card{position:relative;min-height:280px;border-radius:20px;overflow:hidden;box-shadow:0 18px 30px #09203b33;color:#fff}
+.ind-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .35s}.ind-card:hover img{transform:scale(1.07)}
+.ind-c{position:absolute;inset:auto 0 0;padding:60px 18px 18px;background:linear-gradient(transparent,#04201cee)}.ind-c h3{margin:0 0 4px;font-size:18px}.ind-c p{margin:0;font-size:13px;color:#e8edf3}
+
+#pg{position:fixed;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#ff6a13,#ffc15e);transform:scaleX(0);transform-origin:left;z-index:60}
+nav{transition:box-shadow .3s}nav .wrap{transition:height .3s}nav.sc{box-shadow:0 10px 30px rgba(0,0,0,.35)}nav.sc .wrap{height:54px}
+.menu a.on:not(.btn){color:#ffb36b;box-shadow:0 2px 0 #ff6a13}
+::selection{background:#ff6a13;color:#fff}
+.hero{position:relative}.hero .wrap{position:relative;z-index:1}
+.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;pointer-events:none;transition:transform .5s ease-out}
+.o1{width:380px;height:380px;background:#ff6a13;top:-80px;right:8%;transform:translate(var(--mx,0px),var(--my,0px));animation:pu 6s ease-in-out infinite alternate}
+.o2{width:320px;height:320px;background:#12a58e;bottom:-90px;left:-60px;transform:translate(calc(var(--mx,0px)*-1),calc(var(--my,0px)*-1))}
+@keyframes pu{to{scale:1.3;opacity:.3}}
+.photo img{transition:transform .25s ease-out;box-shadow:18px 30px 60px #0009,0 0 0 6px rgba(255,106,19,.25),0 0 60px rgba(255,106,19,.35)}
+.marq{background:linear-gradient(90deg,#ff6a13,#ff9a3d);color:#2b1000;overflow:hidden;white-space:nowrap;font-weight:700;padding:14px 0}
+#mq{display:inline-flex;animation:mq 40s linear infinite}#mq span{padding-right:46px}.marq:hover #mq{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+h2:after{background:linear-gradient(90deg,var(--red),#ffc15e)}
+.alt{background:radial-gradient(rgba(255,106,19,.14) 1.4px,transparent 1.4px) 0 0/22px 22px,linear-gradient(180deg,var(--card),var(--bg))}
+.card{border-radius:24px}.ico{transition:transform .3s}.card:hover .ico{transform:rotate(-8deg) scale(1.12)}
+.card:hover{border-color:var(--red)}.pcard{overflow:hidden}.pimg{transition:transform .5s}.pcard:hover .pimg{transform:scale(1.06)}
+.ind-card{transition:transform .25s}.ind-c p{max-height:0;opacity:0;overflow:hidden;transition:.35s}.ind-card:hover .ind-c p{max-height:90px;opacity:1}
+@media(hover:none){.ind-c p{max-height:90px;opacity:1}}
+.btn.red{position:relative;overflow:hidden}.btn.red:after{content:"";position:absolute;top:0;left:-70%;width:50%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);animation:sh 3.5s infinite}
+@keyframes sh{60%,100%{left:140%}}
+.fab a:first-child{animation:ring 2s infinite}@keyframes ring{0%{box-shadow:0 0 0 0 rgba(31,170,89,.6)}100%{box-shadow:0 0 0 18px rgba(31,170,89,0)}}
+.rv:not(.in){opacity:0}.rv.in{animation:up .7s backwards}@keyframes up{from{opacity:0;transform:translateY(34px) scale(.97)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}.rv:not(.in){opacity:1}}
+</style></head><body>
+
+<nav><div class="wrap"><a class="logo" href="#home">🛡️🔥 Unity Fire & Safety Services</a>
+<div class="menu"><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#products">Products</a><a href="#contact">Contact Us</a><a class="btn red" href="#quote">Get a Quote</a></div></div></nav>
+
+<header class="hero" id="home"><div class="wrap"><div>
+<h1>Complete <span>Fire & Safety</span> Solutions</h1>
+<div class="tag">Protecting People, Property and Businesses.</div>
+<p>Unity Fire & Safety Services provides fire and safety equipment and solutions for residential, commercial and industrial requirements. We help customers identify suitable fire protection equipment and services to support safer environments.</p>
+<p>From fire extinguishers and fire alarm systems to fire hydrant, sprinkler and other fire safety solutions, Unity Fire & Safety Services provides equipment and service support based on customer and site requirements.</p>
+<div class="cta"><a class="btn red" href="#quote">Get a Quote</a><a class="btn out" href="tel:+918849241672">Call Now</a><a class="btn grn" href="https://wa.me/918849241672" target="_blank" rel="noopener">WhatsApp Us</a></div></div>
+<div class="photo"><img src="https://images.pexels.com/photos/29106030/pexels-photo-29106030.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Red fire extinguishers in a dark industrial area"></div></div></header><div class="marq"><div id="mq"></div></div>
+
+<section id="about"><div class="wrap"><h2>About Unity Fire & Safety Services</h2><div class="sub"></div>
+<div class="about"><div><p>Unity Fire & Safety Services is a fire and safety solutions business based in Umreth, Gujarat. The company provides fire safety equipment and related services for different types of residential, commercial and industrial requirements.</p><p>Our focus is to provide practical fire protection solutions and help customers understand and access the equipment and services required for their safety needs.</p><p>We offer a range of fire safety products and services including fire extinguishers, fire alarm systems, fire hydrant systems, fire sprinkler systems, firefighting equipment, installation support and maintenance services.</p></div>
+<div style="display:grid;gap:16px" id="mv"></div></div></div></section>
+
+<section id="services" class="alt"><div class="wrap"><h2>Our Fire & Safety Services</h2><div class="sub"></div><div class="grid" id="sv"></div></div></section>
+
+<section id="products"><div class="wrap"><h2>Fire Safety Products</h2><div class="sub"></div><div class="grid" id="pr"></div>
+<p class="note">Product availability and specifications are confirmed with the company on enquiry.</p></div></section>
+
+<section class="alt"><div class="wrap"><h2>Why Choose Unity Fire & Safety Services?</h2><div class="sub"></div><div class="grid" id="wy"></div></div></section>
+
+<section><div class="wrap"><h2>Industries We Serve</h2><div class="sub"></div><div class="grid" id="in" style="grid-template-columns:repeat(auto-fill,minmax(210px,1fr))"></div></div></section>
+
+<section class="alt"><div class="wrap"><h2>Our Process</h2><div class="sub"></div><div class="grid steps" id="st"></div></div></section>
+
+<section id="quote"><div class="wrap"><h2>Need Fire & Safety Solutions?</h2>
+<p class="sub">Tell us about your requirement and contact us for suitable fire safety equipment and service options.</p>
+<form id="qf"><div><label>Name</label><input name="n" required></div><div><label>Phone Number</label><input name="p" type="tel" required></div>
+<div class="full"><label>Company / Organization</label><input name="c"></div>
+<div><label>Service Required</label><select name="s"></select></div><div><label>Product Required</label><select name="pr"></select></div>
+<div class="full"><label>Preferred Contact Method</label><select name="m"><option>Call</option><option>WhatsApp</option></select></div>
+<div class="full"><label>Message / Requirement</label><textarea name="g" rows="4"></textarea></div>
+<div class="full"><button class="btn red" type="submit">Submit Enquiry</button></div></form></div></section>
+
+<section id="contact" class="alt"><div class="wrap"><h2>Contact Us</h2><div class="sub"></div>
+<div class="contact"><div class="card"><h3>Unity Fire & Safety Services</h3>
+<p><b>Address</b><br>Welcome Market, G-24<br>Umreth, Gujarat 388220<br>India</p><br>
+<p><b>Phone</b><br><a href="tel:+918849241672">+91 88492 41672</a></p><br>
+<p><b>WhatsApp</b><br><a href="https://wa.me/918849241672" target="_blank" rel="noopener">+91 88492 41672</a></p></div>
+<div class="card" style="display:grid;place-items:center;text-align:center;background:linear-gradient(145deg,var(--navy2),var(--navy));color:#fff"><div><div style="font-size:64px">📍</div><h3>Find us in Umreth</h3><p style="color:#cfe8e1">Welcome Market, G-24</p><br><a class="btn red" href="https://maps.app.goo.gl/iWaXe8xczh2Z7vMWA" target="_blank" rel="noopener">Get Directions</a></div></div></div></div></section>
+
+<div class="band"><div class="wrap"><h2 style="color:#fff">Have a Fire Safety Requirement?</h2>
+<p>Contact Unity Fire & Safety Services to discuss your fire safety equipment, installation, maintenance or service requirements.</p>
+<div class="cta"><a class="btn out" href="tel:+918849241672">Call Us: +91 88492 41672</a><a class="btn grn" href="https://wa.me/918849241672" target="_blank" rel="noopener">WhatsApp Us: +91 88492 41672</a><a class="btn red" href="#quote">Get a Quote</a><a class="btn out" href="https://maps.app.goo.gl/iWaXe8xczh2Z7vMWA" target="_blank" rel="noopener">Get Directions</a></div></div></div>
+
+<footer><div class="wrap"><div class="cols">
+<div><h4>Unity Fire & Safety Services</h4>Fire & safety equipment and service solutions for residential, commercial and industrial requirements.</div>
+<div><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#products">Products</a><a href="#contact">Contact Us</a><a href="#quote">Request a Quote</a></div>
+<div><h4>Services</h4><div id="fs"></div></div>
+<div><h4>Contact</h4>Welcome Market, G-24<br>Umreth, Gujarat 388220, India<br><br><a href="tel:+918849241672">+91 88492 41672</a></div></div>
+<div class="bar"><span>© 2026 Unity Fire & Safety Services. All Rights Reserved.</span><span>Privacy Policy &nbsp;|&nbsp; Terms & Conditions</span></div></div></footer>
+
+<div class="fab"><a href="https://wa.me/918849241672" target="_blank" rel="noopener" style="background:#1faa59" aria-label="WhatsApp">💬</a><a href="tel:+918849241672" style="background:var(--red)" aria-label="Call">📞</a></div>
+
+<script>
+const $=i=>document.getElementById(i);
+const card=(i,t,d,c="")=>`<div class="card ${c}"><div class="ico">${i}</div><h3>${t}</h3>${d?`<p>${d}</p>`:""}</div>`;
+$("mv").innerHTML=[["🎯","Our Mission","To provide accessible and practical fire safety equipment and service solutions that help customers create safer homes, workplaces and facilities."],["👁️","Our Vision","To become a trusted local provider of fire and safety solutions by focusing on reliable products, professional service and customer support."],["🧭","Our Approach","We focus on understanding customer requirements, identifying appropriate fire safety solutions, supplying suitable equipment and providing installation and maintenance support where required."]].map(a=>card(...a)).join("");
+const S=[["🧯","Fire Extinguisher Services","Supply, installation support, inspection and maintenance of commonly used fire extinguishers for suitable applications."],["🚨","Fire Alarm Systems","Fire alarm and detection solutions designed to provide early warning and support fire safety requirements in buildings and facilities."],["🚒","Fire Hydrant Systems","Fire hydrant equipment and system solutions for facilities that require dedicated firefighting infrastructure."],["💧","Fire Sprinkler Systems","Fire sprinkler solutions for suitable residential, commercial and industrial applications."],["🔥","Fire Fighting Systems","Firefighting equipment and solutions designed according to the requirements of the facility."],["🦺","Fire Safety Equipment","Supply of fire safety equipment and accessories for different environments and applications."],["🔧","Installation Services","Installation and setup support for fire safety equipment and systems."],["🛠️","Maintenance & AMC","Maintenance and inspection support for fire safety equipment and systems to help keep them in suitable working condition."],["🔍","Fire Safety Inspection","Inspection-oriented support to identify fire safety equipment and protection requirements."],["💬","Fire Safety Consultation","Assistance in understanding fire safety equipment, protection requirements and suitable service options."]];
+$("sv").innerHTML=S.map(a=>card(...a)).join("");
+$("fs").innerHTML=["Fire Extinguishers","Fire Alarm Systems","Fire Hydrant Systems","Fire Sprinkler Systems","Fire Fighting Systems","Fire Safety Equipment","Installation Services","Maintenance & AMC","Fire Safety Inspection","Safety Consultation"].map(x=>`<a href="#services">${x}</a>`).join("");
+const PU=['https://images.pexels.com/photos/12072478/pexels-photo-12072478.jpeg?auto=compress&cs=tinysrgb&w=900','https://images.pexels.com/photos/31470430/pexels-photo-31470430.jpeg?auto=compress&cs=tinysrgb&w=900','https://images.pexels.com/photos/31794084/pexels-photo-31794084.jpeg?auto=compress&cs=tinysrgb&w=900','https://images.pexels.com/photos/12045663/pexels-photo-12045663.jpeg?auto=compress&cs=tinysrgb&w=900','https://images.pexels.com/photos/189466/pexels-photo-189466.jpeg?auto=compress&cs=tinysrgb&w=900','https://images.pexels.com/photos/5848977/pexels-photo-5848977.jpeg?auto=compress&cs=tinysrgb&w=900'];
+const IU=['https://images.pexels.com/photos/7672060/pexels-photo-7672060.jpeg?auto=compress&cs=tinysrgb&w=900','https://images.pexels.com/photos/20297567/pexels-photo-20297567.jpeg?auto=compress&cs=tinysrgb&w=900','https://images.pexels.com/photos/37745175/pexels-photo-37745175.jpeg?auto=compress&cs=tinysrgb&w=900','https://images.pexels.com/photos/4481327/pexels-photo-4481327.jpeg?auto=compress&cs=tinysrgb&w=900','https://images.pexels.com/photos/20200756/pexels-photo-20200756.jpeg?auto=compress&cs=tinysrgb&w=900','https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=900','https://images.pexels.com/photos/34264627/pexels-photo-34264627.jpeg?auto=compress&cs=tinysrgb&w=900','https://images.pexels.com/photos/26861411/pexels-photo-26861411.jpeg?auto=compress&cs=tinysrgb&w=900'];
+const P=[["🧯","Fire Extinguishers",["ABC Dry Chemical Powder","CO₂","Water","Foam"]],["🚨","Fire Alarm Equipment",["Fire Alarm Panels","Smoke Detectors","Heat Detectors","Manual Call Points","Alarm Sounders","Fire Alarm Accessories"]],["🚒","Fire Hydrant Equipment",["Hydrant Valves","Hose Pipes","Branch Pipes","Nozzles","Fire Hydrant Accessories"]],["💧","Fire Sprinkler Equipment",["Sprinkler Heads","Sprinkler Accessories","Valves","Pipes and Related Components"]],["🧵","Fire Hose Equipment",["Fire Hoses","Hose Reels","Hose Accessories","Fire Hose Couplings"]],["🪣","Fire Safety Accessories",["Fire Buckets","Fire Safety Signs","Emergency Safety Equipment"]]];
+$("pr").innerHTML=P.map((p,i)=>`<div class="card pcard"><img class="pimg" loading="lazy" src="${PU[i]}" alt="${p[1]}"><h3>${p[1]}</h3><ul>${p[2].map(x=>`<li>${x}</li>`).join("")}</ul><a class="btn red" href="#quote">Request Quote</a></div>`).join("");
+$("wy").innerHTML=[["🛡️","Safety-Focused Solutions","We focus on fire safety equipment and solutions designed around customer and facility requirements."],["📦","Wide Range of Equipment","We provide access to different categories of fire protection and safety equipment."],["🔧","Installation Support","We provide support for the installation and setup of suitable fire safety systems and equipment."],["🛠️","Maintenance Support","We provide maintenance and inspection support for fire safety equipment and systems."],["📞","Customer Assistance","Customers can contact us by phone, WhatsApp or enquiry form to discuss their requirements."],["✅","Practical Solutions","We focus on practical fire safety solutions based on the type of facility and customer requirements."]].map(a=>card(...a)).join("");
+$("in").innerHTML=[["🏠","Residential","Fire safety equipment and solutions for homes and residential properties."],["🏢","Commercial","Fire protection equipment and systems for offices, shops and commercial buildings."],["🏭","Industrial","Fire safety equipment and protection solutions for industrial facilities."],["📦","Warehouses","Fire safety solutions for warehouses and storage facilities."],["🎓","Schools & Colleges","Fire safety equipment and protection solutions for educational institutions."],["🏥","Hospitals","Fire safety equipment and protection solutions for healthcare facilities."],["🏨","Hotels","Fire protection equipment and safety solutions for hospitality facilities."],["🛍️","Retail","Fire safety equipment for shops, stores and retail establishments."]].map((a,i)=>`<div class="ind-card"><img loading="lazy" src="${IU[i]}" alt="${a[1]}"><div class="ind-c"><h3>${a[1]}</h3><p>${a[2]}</p></div></div>`).join("");
+$("st").innerHTML=[["Understand Your Requirement","We understand the customer's facility, requirements and fire safety needs."],["Requirement Assessment","We review the type of equipment or fire protection solution required."],["Recommend Suitable Solutions","We help identify appropriate equipment and service options."],["Supply","We provide the required fire safety equipment or products."],["Installation","Installation and setup support is provided where applicable."],["Maintenance","Maintenance and inspection support can be provided according to the requirement."]].map(a=>`<div class="card step"><h3>${a[0]}</h3><p>${a[1]}</p></div>`).join("");
+const f=$("qf");
+f.s.innerHTML=S.map(a=>`<option>${a[1]}</option>`).join("");
+f.pr.innerHTML=P.map(a=>`<option>${a[1]}</option>`).join("");
+f.onsubmit=e=>{e.preventDefault();const v=f.elements;
+const t=`Enquiry - Unity Fire & Safety Services%0AName: ${v.n.value}%0APhone: ${v.p.value}%0ACompany: ${v.c.value}%0AService: ${v.s.value}%0AProduct: ${v.pr.value}%0AContact via: ${v.m.value}%0ARequirement: ${v.g.value}`;
+window.open("https://wa.me/918849241672?text="+t.replace(/ /g,"%20"),"_blank")};
+</script><script>
+(()=>{const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const bar=document.createElement('div');bar.id='pg';document.body.prepend(bar);
+const nav=document.querySelector('nav'),links=[...document.querySelectorAll('.menu a[href^="#"]')],secs=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+function sc(){const h=document.documentElement;bar.style.transform='scaleX('+Math.min(1,scrollY/(h.scrollHeight-innerHeight||1))+')';nav.classList.toggle('sc',scrollY>20);let c='';secs.forEach(x=>{if(x.getBoundingClientRect().top<140)c=x.id});links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+c))}
+addEventListener('scroll',sc,{passive:true});sc();
+const n=S.map(x=>x[1]);document.getElementById('mq').innerHTML=[...n,...n].map(x=>'<span>🔥 '+x+'</span>').join('');
+if(rm)return;
+const hero=document.querySelector('.hero'),ph=document.querySelector('.photo img');
+hero.insertAdjacentHTML('afterbegin','<i class="orb o1"></i><i class="orb o2"></i>');
+hero.addEventListener('mousemove',e=>{const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;ph.style.transform='perspective(1100px) rotateY('+(-6+x*12)+'deg) rotateX('+(-y*10)+'deg)';hero.style.setProperty('--mx',x*40+'px');hero.style.setProperty('--my',y*40+'px')});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('section h2,.sub,.card,.ind-card,form,.contact>div').forEach((el,i)=>{el.classList.add('rv');el.style.animationDelay=(i%4)*90+'ms';io.observe(el)});
+document.querySelectorAll('.card,.ind-card').forEach(c=>{c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(700px) rotateY('+x*9+'deg) rotateX('+(-y*9)+'deg) translateY(-6px)'});c.addEventListener('mouseleave',()=>c.style.transform='')});
+})();
+</script></body></html>

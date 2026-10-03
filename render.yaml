@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: unity-fire-safety
+    runtime: static
+    buildCommand: "echo 'No build step required'"
+    staticPublishPath: .
