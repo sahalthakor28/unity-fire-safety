@@ -2155,6 +2155,139 @@ section h2 {
   border-top: 1px solid rgba(6, 182, 212, 0.35);
 }
 
+
+/* Mobile-first responsive refinements */
+img, video, canvas, svg { max-width: 100%; }
+.wrap { width: 100%; }
+.grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+button, .btn, .f-tab, .bp-zbtn, .hz-btn, .pass-btn { max-width: 100%; }
+input, select, textarea { min-width: 0; }
+pre, code { overflow-wrap: anywhere; }
+
+@media (max-width: 980px) {
+  .topbar .wrap { justify-content: center; }
+  .tb-left, .tb-right { justify-content: center; }
+  nav .wrap { min-height: 64px; }
+  .hero { padding: 48px 0 56px; }
+  .hero .wrap { gap: 28px; }
+  .hero h1 { font-size: clamp(32px, 7vw, 48px); }
+  .photo { order: initial; }
+  .photo-main { height: clamp(230px, 48vw, 360px); }
+  section { padding: 64px 0; }
+  .bp-stage, .bp-detail, .sim-shell, .hazard-shell,
+  .calc-box, .calc-res { padding: 22px; }
+  .menu { display: none !important; }
+  .mob-toggle { display: inline-grid; place-items: center; }
+  .nav-actions { margin-left: auto; }
+}
+@media (max-width: 640px) {
+  html { scroll-padding-top: 76px; }
+  body { font-size: 14.5px; }
+  .wrap { padding-left: 16px; padding-right: 16px; }
+  .topbar { padding: 7px 0; font-size: 11px; }
+  .topbar .wrap { gap: 6px; }
+  .tb-left, .tb-right { gap: 6px; }
+  .tb-pill { font-size: 10px; padding: 3px 7px; }
+  .tb-btn { font-size: 11px; padding: 5px 8px; }
+  nav .wrap { gap: 8px; min-height: 60px; }
+  .logo { font-size: 13px; gap: 8px; min-width: 0; }
+  .logo-mark { width: 36px; height: 36px; font-size: 19px; border-radius: 10px; }
+  .logo-sub { font-size: 9px; }
+  .nav-actions { gap: 6px; }
+  .tray-btn { padding: 8px 9px; font-size: 11px; gap: 5px; }
+  .mob-toggle { width: 38px; height: 38px; flex: 0 0 auto; }
+  .mob-drawer { padding: 12px 16px 18px; }
+  .mob-drawer-links { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .mob-drawer-links a { padding: 11px 10px; font-size: 12px; }
+  .hero { padding: 38px 0 44px; }
+  .hero .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .hero h1 { font-size: clamp(30px, 9vw, 42px); line-height: 1.08; }
+  .tag { font-size: 16px; }
+  .hero p { font-size: 14px; }
+  .hero-badges { gap: 6px; }
+  .h-badge { font-size: 10px; padding: 4px 9px; }
+  .cta { gap: 9px; }
+  .cta .btn { flex: 1 1 100%; white-space: normal; text-align: center; }
+  .hero-telemetry { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 22px; }
+  .ht-box { padding: 10px; }
+  .ht-box strong { font-size: 19px; }
+  .ht-box span { font-size: 10.5px; }
+  .hero-command-frame { padding: 7px; border-radius: 18px; }
+  .photo-main { height: 230px; border-radius: 13px; }
+  .hud-top-bar { font-size: 9px; padding: 5px 8px 8px; gap: 6px; }
+  .hud-overlay-gauges { gap: 6px; }
+  .hud-gauge { padding: 8px; }
+  .hud-gauge small { font-size: 9px; }
+  .hud-gauge strong { font-size: 12px; }
+  .marq { font-size: 11px; padding: 10px 0; }
+  section { padding: 48px 0; }
+  h2 { font-size: clamp(24px, 7vw, 32px); }
+  .sub { font-size: 14px; margin-bottom: 28px; }
+  .grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .card { padding: 19px; border-radius: 16px; }
+  .card h3 { font-size: 17px; }
+  .srv-photo-wrap { height: 180px; }
+  .bp-layout, .sim-shell, .about, .calc-grid, .hz-panel, .contact,
+  footer .cols, form#qf { grid-template-columns: minmax(0, 1fr); }
+  .bp-stage, .bp-detail, .sim-shell, .hazard-shell,
+  .calc-box, .calc-res { padding: 16px; border-radius: 18px; }
+  .bp-zone-btns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .bp-zbtn { font-size: 11px; padding: 9px 8px; }
+  .bp-svg-wrap { overflow-x: auto; }
+  .sim-screen { min-height: 260px; padding: 14px; }
+  .pass-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pass-btn { padding: 11px 8px; }
+  .std-grid, .about-gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .std-box { padding: 11px; }
+  .ag-item { height: 125px; }
+  .filter-bar { justify-content: flex-start; gap: 7px; overflow-x: auto; flex-wrap: nowrap; padding: 2px 1px 8px; }
+  .f-tab { flex: 0 0 auto; padding: 8px 12px; font-size: 12px; }
+  .hazard-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .hz-btn { padding: 11px 8px; }
+  .hz-panel { padding: 15px; gap: 16px; }
+  .ext-pills { grid-template-columns: minmax(0, 1fr); }
+  .prod-toolbar { align-items: stretch; }
+  .search-box { min-width: 0; max-width: none; flex-basis: 100%; }
+  .pimg-wrap { height: 175px; }
+  .card-actions .btn { flex: 1 1 100%; white-space: normal; }
+  .calc-grid { gap: 14px; }
+  .hz-checks, .res-items { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .res-card { padding: 10px; }
+  .res-card strong { font-size: 19px; }
+  .ind-card { min-height: 230px; }
+  .dpa-grid { grid-template-columns: minmax(0, 1fr); }
+  .dpa-banner { padding: 18px; }
+  .faq-q { padding: 15px 16px; font-size: 14px; }
+  .faq-a { padding: 12px 16px 15px; font-size: 13.5px; }
+  form#qf { padding: 18px; gap: 13px; }
+  form .full { grid-column: auto; }
+  .c-row { padding: 11px; gap: 10px; }
+  .band { padding: 48px 0; }
+  .band .cta .btn { flex: 1 1 100%; }
+  footer { padding: 42px 0 24px; }
+  footer .cols { gap: 22px; }
+  .bar { align-items: flex-start; flex-direction: column; }
+  .legal-links { gap: 10px; }
+  .fab { right: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); gap: 8px; }
+  .fab a { width: 46px; height: 46px; font-size: 21px; }
+  .modal-backdrop { padding: 10px; }
+  .modal-card { max-height: 92dvh; border-radius: 16px; }
+  .modal-head { padding: 14px 16px; }
+}
+@media (max-width: 380px) {
+  .wrap { padding-left: 12px; padding-right: 12px; }
+  .logo { font-size: 12px; }
+  .logo-sub { display: none; }
+  .tray-btn { font-size: 10px; padding: 7px; }
+  .hero h1 { font-size: 29px; }
+  .hero-telemetry { gap: 6px; }
+  .ht-box strong { font-size: 17px; }
+  .std-grid, .about-gallery-grid, .hz-checks, .res-items { grid-template-columns: minmax(0, 1fr); }
+  .cta .btn { padding: 11px 14px; }
+}
+@media (hover: none), (pointer: coarse) {
+  .card:hover, .ind-card:hover { transform: none; }
+}
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
